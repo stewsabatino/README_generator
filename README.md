@@ -22,7 +22,7 @@
 
   ## Description:
 
-  <img src="./utils/generateMarkdown.js" alt="gif of the generator used in terminal">
+  <img src="./utils/readme_generator.gif" alt="gif of the generator used in terminal">
 
   I am making a readme two times a week, it takes a long time and looks different everytime.
   I wanted to make an app that can standardize my readmes and will be able to be made quick
