@@ -33,8 +33,10 @@ const questions = [
         message: "How do you test this project?",
         name: "testing"
     }, {
+        type: "list",
         message: "Do you want a license?",
-        name: "licensing"
+        choices: ["Apache 2.0", "IBM", "MIT", "Mozilla"],
+        name: "license"
     }, {
         message: "Enter your Github username",
         name: "github"
