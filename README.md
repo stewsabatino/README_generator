@@ -27,7 +27,33 @@
   I am making a readme two times a week, it takes a long time and looks different everytime.
   I wanted to make an app that can standardize my readmes and will be able to be made quick
   Making readmes that do not look professional
-  How to use inquirer, switch cases, gitignores
+  How to use inquirer, switch cases, gitignores, arrow functions
+
+    * writeToFile arrow function 
+    ```
+    function writeToFile(fileName, data) {
+      // makes file, if error occurs than console.log the error
+      fs.writeFile(fileName, data, (err) => {
+          err ? console.log(err) : console.log("Success! A new README has been generated")
+      })
+
+    }
+    ```
+    * switch case
+    ```
+    function renderLicenseLinkBadge(license) {
+    switch (license) {
+      case "Apache 2.0":
+        return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+      case "IBM":
+        return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
+      case "MIT":
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+      case "Mozilla":
+        return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+      }
+    }
+    ```
 
   ## Installation:
   pull from github and download inquirer
